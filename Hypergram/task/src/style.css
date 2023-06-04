@@ -1,0 +1,78 @@
+* {margin: 0; padding: 0}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#field-section {
+    width: 75%;
+}
+
+#edit-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    background-color: #81a1d0;
+}
+
+
+#edit-section * {
+    width: 60%;
+    text-align: center;
+}
+
+
+#file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#edit-section label {
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 30px;
+}
+
+#file-input + label {
+    color: #1c1c1c;
+    background-color: #dcafc6;
+    padding-top: 5px;
+    height: 25px;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#file-input:focus + label, #file-input + label:hover {
+    background-color: #a87994;
+}
+
+#file-input:focus + label, #file-input.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+#save-button {
+    margin-top: 40px;
+    font-size: 17px;
+    height: 30px;
+    color: black;
+    border-radius: 2px;
+    background-color: #7d8598;
+    cursor: pointer;
+    border: transparent;
+}
+
+input[type='range'] {
+    cursor: pointer;
+}

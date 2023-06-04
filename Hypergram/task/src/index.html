@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hypergram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="field-section">
+            <canvas id="canvas"></canvas>
+        </section>
+        <section id="edit-section">
+            <input type="file" id="file-input" accept = "image/*" data-multiple-caption="{count} files selected" multiple>
+            <label for="file-input">UPLOAD FILE</label>
+            <label for="brightness">Brightness</label>
+            <input type="range" id="brightness" min="-255" max="255" step="1">
+            <label for="contrast">Contrast</label>
+            <input type="range" id="contrast" min="-128" max="128" step="1">
+            <label for="transparent">Transparent</label>
+            <input type="range" id="transparent" min="0" max="1" value="1" step="0.1">
+            <button id="save-button">SAVE IMAGE</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
